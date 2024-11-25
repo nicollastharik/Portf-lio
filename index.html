@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nícollas Thárik</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nícollas Thárik</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/foto-perfil3.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá, eu sou</p>
+        <h1 class="title">Nícollas Thárik</h1>
+        <p class="section__text__p2"></p>
+       
+        
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1"></p>
+      <a><h1  class="title">Sobre mim</h1></a>
+      <div class="section-container">
+        <div class="section__pic-container">
+          
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/study.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>
+                 Tenho 18 anos, estou atualmente no 3º ano do encino médio, no periodo da manhã.
+              </h3>
+              
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/study2.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Estou estudando no 3º semestre do curso de Análize e Desenvolvimento de Sistemas na Etec, no
+                periodo da noite,
+                tenho uma maior facilidade na área de back-end, porem também mexo com o front-end
+              </h3>
+              
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+             
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+<!--selection-->
+    <section id="experience">
+      <p class="section__text__p1"></p>
+      <a><h1 class="title">Skills</h1></a>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Back-end </h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/python.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PYTHON</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/c-.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/php.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+              
+                <div>
+                  
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Front-end</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/html-5.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/css.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="projects">
+      <p class="section__text__p1"></p>
+     <a> <h1 class="title">Projetos</h1></a>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projeto1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Projeto1</h2>
+            <h5>Bot que envia mensagem automática no Whatsapp</h5>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/nicollastharik/bot_whatz/blob/main/bot.py'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+          
+<!--    projeto 3 - colocar ele aqui quando terminar 
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Projeto3</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+-->
+
+        </div>
+      </div>
+      
+    </section>
+    <section id="contact">
+      <p class="section__text__p1"></p>
+      <a><h1 class="title">Contato</h1></a>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">thariktaka@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/n%C3%ADcollas-th%C3%A1rik-takaoka-108307322/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="Github icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.github.com">Github</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
